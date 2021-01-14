@@ -1,0 +1,102 @@
+<style>
+    :root{
+        --var1 :white;
+    }
+    body{
+        background-color: salmon;
+    }
+    .panda{
+        position: relative;
+        height: 500px;
+        width: 440px;
+        background-color: white;
+        margin: auto;
+    }
+    .panda-top{
+        position: relative;
+        top: -57%;
+        left: 12%;
+        height: 55%;
+        width: 72%;
+        background-color: #ffffff;
+        opacity: 0.9;
+        border-radius:50% 50% 48% 52% / 63% 63% 37% 37%;
+
+    }
+
+    .panda-backshadow{
+        position: relative;
+        top: 1%;
+        left: 10%;
+        height: 59%;
+        width: 76%;
+        background-color: gray;
+        opacity: 0.3;
+        border-radius:50% 50% 48% 52% / 63% 63% 37% 37%;
+         
+    }
+
+    .left-eye{
+        position: relative;
+        top: 35%;
+        left: 12%;
+        height: 35%;
+        width: 28%;
+        background-color: black;
+        opacity: 0.9;
+        border-radius: 50% 50% 48% 52% / 68% 68% 32% 32% ;
+        transform: rotate(35deg);
+    }
+
+    .right-eye{
+        position: relative;
+        top: 0%;
+        left: 60%;
+        height: 35%;
+        width: 28%;
+        background-color: black;
+        opacity: 0.9;
+        border-radius: 50% 50% 48% 52% / 68% 68% 32% 32% ;
+        transform: rotate(-35deg);
+    }
+    .nose{
+        position: relative;
+        top: -12%;
+        left: 42.5%;
+        height: 10%;
+        width: 15%;
+        background-color: black;
+        opacity: 0.9;
+        border-radius: 50% 50% 49% 51% / 28% 28% 72% 72% ;
+    }
+    .nose-white{
+        position: relative;
+        top: 5%;
+        left: 25%;
+        width: 50%;
+        height: 50%;
+        background-color: white;
+        border-radius: 50% 50% 49% 51% / 48% 48% 52% 52% ;
+
+    }
+
+
+</style>
+<html>
+    <head>
+    
+    </head>
+    <body>
+        <div class="panda">
+            <div class="panda-backshadow"></div>
+            <div class="panda-top">
+                <div class="left-eye"></div>
+                <div class="right-eye"></div>
+                <div class="nose">
+                    <div class="nose-white"></div>
+                </div>
+            </div>
+            <div class="panda-bottom"></div>
+        </div>
+    </body>
+</html>
