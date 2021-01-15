@@ -11,6 +11,7 @@
         width: 440px;
         background-color: white;
         margin: auto;
+        z-index: -2;
     }
     .panda-top{
         position: relative;
@@ -18,8 +19,7 @@
         left: 12%;
         height: 55%;
         width: 72%;
-        background-color: #ffffff;
-        opacity: 0.9;
+        background-color: #ffffff ;
         border-radius:50% 50% 48% 52% / 63% 63% 37% 37%;
 
     }
@@ -33,6 +33,7 @@
         background-color: gray;
         opacity: 0.3;
         border-radius:50% 50% 48% 52% / 63% 63% 37% 37%;
+        border: solid 3px
          
     }
 
@@ -80,6 +81,186 @@
 
     }
 
+    .left-eye-shadow{
+        position: relative;
+        top: 25%;
+        left:50%;
+        height: 35%;
+        width: 25%;
+        background-color: #515251;
+        transform: rotate(-35deg);
+        box-shadow: 0px 3px   #9da19d;
+        border-radius : 50% 50% 49% 51% / 48% 48% 52% 52%;
+        opacity: 0.6;
+        
+    }
+
+    .left-eye-pupil{
+        position: relative;
+        top: 5%;
+        left: 25%;
+        height: 40%;
+        width: 55%;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        
+    }
+
+    .right-eye-shadow{
+        position: relative;
+        top: 25%;
+        left:25%;
+        height: 35%;
+        width: 25%;
+        background-color: #515251;
+        transform: rotate(35deg);
+        box-shadow: 0px 3px   #9da19d;
+        border-radius : 50% 50% 49% 51% / 48% 48% 52% 52%;
+        
+        opacity: 0.6;
+    }
+
+    .right-eye-pupil{
+        position: relative;
+        top: 5%;
+        left: 20%;
+        height: 40%;
+        width: 55%;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+    }
+
+    .left-ear{
+        position: absolute;
+        top:0%;
+        left:0%;
+        height: 25%;
+        width:25%;
+        background-color: #000000;
+        opacity: 0.9;
+        border-radius: 51% 49% 49% 51% / 42% 42% 58% 58%  ;
+        transform: rotate(-35deg);
+    }
+    .left-ear-shadow{
+        position: relative;
+        top:20%;
+        left: 16%;
+        height: 70%;
+        width: 70%;
+        background-color : #444544;
+        border-radius: 51% 49% 49% 51% / 42% 42% 58% 58%  ;
+    }
+
+    .right-ear{
+        position: absolute;
+        top:0%;
+        left:74%;
+        height: 25%;
+        width:25%;
+        background-color: #000000;
+        opacity: 0.9;
+        border-radius: 51% 49% 49% 51% / 42% 42% 58% 58%  ;
+        transform: rotate(35deg);
+    }
+    .right-ear-shadow{
+        position: relative;
+        top:20%;
+        left: 16%;
+        height: 70%;
+        width: 70%;
+        background-color : #444544;
+        border-radius: 51% 49% 49% 51% / 42% 42% 58% 58%  ;
+    }
+
+
+    .mouth{
+        position: relative;
+        top:0%;
+        left: 40%;
+        height: 10%;
+        width: 20%;
+        background-color: #000000;
+        border-radius: 51% 49% 49% 51% / 0% 0% 100% 100% ;
+    }
+    .mouth-nose{
+      position: relative;
+      top:-30%;
+      left:27%;
+      width: 0%;
+      height: 0%;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 25px solid #000000;
+    }
+    .mouse-line{
+        position: relative;
+        top:-215%;
+        left:48%;
+        height: 120%;
+        width: 5%;
+        background-color:#000000;
+    }
+
+    .tongue1 {
+      position: relative;
+      top:-180%;
+      left:26%;
+      width: 25%;
+      height:32%;
+      background-color:pink;
+      border-radius:51% 49% 49% 51% / 100% 100% 0% 0% ;
+      transform:rotate(-10deg);
+       
+    }
+
+    .tongue2{
+        position: relative;
+      top:-210%;
+      left:49%;
+      width: 25%;
+      height:32%;
+      background-color:pink;
+      border-radius:51% 49% 49% 51% / 100% 100% 0% 0% ;
+      transform:rotate(10deg);
+    }
+
+    .tongue3{
+    position: relative;
+      top:-220%;
+      left:27%;
+      width: 46%;
+      height:40%;
+      background-color:pink;
+      border-radius:51% 49% 49% 51% / 0% 0% 100% 100%  ;
+    }
+
+    .panda-bottom{
+        position: relative;
+        top:-55%;
+        left: 13%;
+        width:70%;
+        height: 70%;
+        background-color: white;
+        border-radius: 51% 49% 49% 51% / 74% 74% 26% 26% ;
+        border:solid 2px;
+        box-shadow: 0px -81px 0px -1px rgba(0,0,0,0.90);
+        z-index: -1;
+    }
+
+    .right-hand {
+        position: relative;
+        top:2%;
+        left: 17%;
+        height: 110%;
+        width :25%;
+        background-color: #000000;
+        border-radius: 87% 13% 66% 34% / 8% 87% 13% 92% ;
+        transform: rotate(-10deg);
+        opacity: 0.9;
+
+
+    }
+
 
 </style>
 <html>
@@ -88,15 +269,47 @@
     </head>
     <body>
         <div class="panda">
+            <div class="left-ear">
+                <div class="left-ear-shadow"></div>
+            </div>
+            <div class="right-ear">
+                <div class="right-ear-shadow"></div>
+            </div>
             <div class="panda-backshadow"></div>
             <div class="panda-top">
-                <div class="left-eye"></div>
-                <div class="right-eye"></div>
+                <div class="left-eye">
+                    <div class="left-eye-shadow">
+                        <div class="left-eye-pupil"></div>
+                    </div>     
+                </div>
+                <div class="right-eye">
+                    <div class="right-eye-shadow">
+                        <div class="right-eye-pupil"></div>
+                    </div>
+                    
+                </div>
                 <div class="nose">
                     <div class="nose-white"></div>
                 </div>
+                <div class="mouth">
+                    <div class="mouth-nose">
+                    </div>
+                    <div class="mouse-line"></div>
+                    <div class="tongue1"></div>
+                    <div class="tongue2"></div>
+                    <div class="tongue3"></div>
+                    <div class="tongue4"></div>
+                    <div class="tongue5"></div>
+                </div>
+                <!-- <div class="triangle"></div> -->
             </div>
-            <div class="panda-bottom"></div>
+            <div class="panda-bottom">
+                <div class="right-hand">
+                    <div class="rfinger1"></div>
+                    <div class="rfinger2"></div>
+                    <div class="rfinger3"></div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
