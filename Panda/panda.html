@@ -3,37 +3,39 @@
         --var1 :white;
     }
     body{
-        background-color: salmon;
+        background:linear-gradient(35deg,#CCFFFF,#FFCCCC);
     }
     .panda{
         position: relative;
         height: 500px;
         width: 440px;
-        background-color: white;
+        background-color: transparent;
         margin: auto;
         z-index: -2;
     }
     .panda-top{
         position: relative;
-        top: -57%;
+        top: -55%;
         left: 12%;
         height: 55%;
         width: 72%;
         background-color: #ffffff ;
         border-radius:50% 50% 48% 52% / 63% 63% 37% 37%;
+        transform: rotate(10deg);
 
     }
 
     .panda-backshadow{
         position: relative;
-        top: 1%;
+        top: 3%;
         left: 10%;
         height: 59%;
         width: 76%;
-        background-color: gray;
-        opacity: 0.3;
+        background-color: black;
+        opacity: 0.7;
         border-radius:50% 50% 48% 52% / 63% 63% 37% 37%;
-        border: solid 3px
+        border: solid 2px;
+        transform: rotate(10deg);
          
     }
 
@@ -139,7 +141,7 @@
         background-color: #000000;
         opacity: 0.9;
         border-radius: 51% 49% 49% 51% / 42% 42% 58% 58%  ;
-        transform: rotate(-35deg);
+        transform: rotate(-45deg);
     }
     .left-ear-shadow{
         position: relative;
@@ -160,7 +162,7 @@
         background-color: #000000;
         opacity: 0.9;
         border-radius: 51% 49% 49% 51% / 42% 42% 58% 58%  ;
-        transform: rotate(35deg);
+        transform: rotate(65deg);
     }
     .right-ear-shadow{
         position: relative;
@@ -233,34 +235,325 @@
       background-color:pink;
       border-radius:51% 49% 49% 51% / 0% 0% 100% 100%  ;
     }
+    .panda-shoulders{
+        position: relative;
+        top:-60%;
+        left: 13%;
+        width:70%;
+        height: 70%;
+        background-color: #000000;
+        border-radius: 51% 49% 49% 51% / 74% 74% 26% 26% ;
+        border:solid 2px;
+        z-index: -1;
+    }
 
     .panda-bottom{
         position: relative;
-        top:-55%;
+        top:-120%;
         left: 13%;
         width:70%;
         height: 70%;
         background-color: white;
-        border-radius: 51% 49% 49% 51% / 74% 74% 26% 26% ;
+        border-radius: 51% 49% 49% 51% / 74% 74% 26% 26% ; 
         border:solid 2px;
-        box-shadow: 0px -81px 0px -1px rgba(0,0,0,0.90);
+
         z-index: -1;
     }
 
     .right-hand {
         position: relative;
         top:2%;
-        left: 17%;
+        left: 22%;
         height: 110%;
         width :25%;
         background-color: #000000;
         border-radius: 87% 13% 66% 34% / 8% 87% 13% 92% ;
         transform: rotate(-10deg);
-        opacity: 0.9;
+
+
+    }
+    .left-hand{
+        position: relative;
+        top:-108%;
+        left: 57%;
+        height: 110%;
+        width :25%;
+        background-color: black;
+        border-radius: 18% 82% 24% 76% / 89% 8% 92% 11%  ;
+        transform: rotate(2deg);
+    }
+
+    .curve{
+        position: relative;
+        top:60%;
+        left: -15%;
+        height: 35%;
+        width :70%;
+        background-color:black;
+        border-radius: 69% 31% 0% 100% / 66% 8% 92% 34% ;   
+    }
+
+    .rfinger1{
+        position: relative;
+        top:95%;
+        left: 10%;
+        height: 10%;
+        width :50%;
+        background-color:black;
+        border-radius: 50% ;
+        border-bottom: solid 3px gray;
+        border-left:solid 3px gray;
 
 
     }
 
+    .rfinger2{
+        position: relative;
+        top:80%;
+        left: 47%;
+        height: 13%;
+        width :55%;
+        background-color:black;
+        border-radius: 50% ;
+        border-bottom: solid 3px gray;
+        border-left:solid 3px gray;
+        border-right: solid 3px gray;
+        z-index:2;
+
+    }
+
+    .lfinger1{
+        position: relative;
+        top:55%;
+        left: 0%;
+        height: 10%;
+        width :50%;
+        background-color:black;
+        border-radius: 50% ;
+        border-bottom: solid 3px gray;
+        border-left:solid 3px gray;
+
+    }
+
+    .lfinger2{
+        position: relative;
+        top:46%;
+        left: 25%;
+        height: 13%;
+        width :55%;
+        background-color:black;
+        border-radius: 50% ;
+        border-bottom: solid 3px gray;
+        border-left:solid 3px gray;
+        border-right: solid 3px gray;
+        z-index:3;
+
+    }
+/*feet*/
+    .right-foot{
+        position: relative;
+        top: -160%;
+        left: -38%;
+        height: 70%;
+        width: 70%;
+        background-color: black;
+        opacity: 0.99;
+        border-radius: 51% 49% 49% 51% / 59% 59% 41% 41% ;
+        transform: rotate(-15deg);
+    }
+
+    .rpalm{
+        position: relative;
+        top: 35%;
+        left: 20%;
+        height: 60%;
+        width: 60%;
+        background-color: gray;
+        border-radius: 51% 49% 49% 51% / 59% 59% 41% 41%;
+
+    }
+    #rpalm-detail{
+        position: relative;
+        height: 40%;
+        width: 45%;
+    }
+    #rpalm-detail::before,
+    #rpalm-detail::after{
+        content: '';
+        position: absolute;
+        top: 135%;
+        left:15%;
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+        box-shadow: 0px 15px 0px 1px rgba(0,0,0,1);
+        border-radius: 51% 49% 49% 51% / 59% 59% 41% 41%;
+    }
+    #rpalm-detail::after{
+        top: 134%;
+        left: 115%;
+        transform: (45deg);
+        background-color: transparent;
+    }
+    .point1{
+        position: relative;
+        background-color: black;
+        left: 100%;
+        top: 225%;
+        width: 30%;
+        height: 30%;
+    }
+
+
+    #rclaw1{
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+    #rclaw1::before,
+    #rclaw1::after{
+        content: '';
+        position: absolute;
+        top: -40%;
+        left: 15%;
+        height: 20%;
+        width: 20%;
+        background-color: gray;
+        border-radius: 50% 50% 48% 52% / 63% 63% 37% 37% ;
+        transform: rotate(-20deg);
+    } 
+    #rclaw1::after{
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: 40%;
+        height: 20%;
+        width: 20%;
+        transform: rotate(0deg);
+        background-color: gray;
+    }
+
+/*claw pair 2*/
+#rclaw2{
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+    #rclaw2::before,
+    #rclaw2::after{
+        content: '';
+        position: absolute;
+        top: -140%;
+        left: 65%;
+        height: 20%;
+        width: 20%;
+        background-color: gray;
+        border-radius: 50% 50% 48% 52% / 63% 63% 37% 37% ;
+        transform: rotate(20deg);
+    } 
+
+    .left-foot{
+        position: relative;
+        top: -230%;
+        left: 78%;
+        height: 70%;
+        width: 70%;
+        background-color: black;
+        opacity: 0.99;
+        border-radius: 51% 49% 49% 51% / 59% 59% 41% 41% ;
+        transform: rotate(10deg);
+    }
+
+
+    .lpalm{
+        position: relative;
+        top: 35%;
+        left: 20%;
+        height: 60%;
+        width: 60%;
+        background-color: gray;
+        border-radius: 51% 49% 49% 51% / 59% 59% 41% 41%;
+
+    }
+    #lpalm-detail{
+        position: relative;
+        height: 40%;
+        width: 45%;
+    }
+    #lpalm-detail::before,
+    #lpalm-detail::after{
+        content: '';
+        position: absolute;
+        top: 135%;
+        left:15%;
+        height: 100%;
+        width: 100%;
+        background-color: transparent;
+        box-shadow: 0px 15px 0px 1px rgba(0,0,0,1);
+        border-radius: 51% 49% 49% 51% / 59% 59% 41% 41%;
+    }
+    #lpalm-detail::after{
+        top: 134%;
+        left: 115%;
+        transform: (45deg);
+        background-color: transparent;
+    }
+    .point2{
+        position: relative;
+        background-color: black;
+        left: 100%;
+        top: 225%;
+        width: 30%;
+        height: 30%;
+    }
+
+    #lclaw1{
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+    #lclaw1::before,
+    #lclaw1::after{
+        content: '';
+        position: absolute;
+        top: -40%;
+        left: 15%;
+        height: 20%;
+        width: 20%;
+        background-color: gray;
+        border-radius: 50% 50% 48% 52% / 63% 63% 37% 37% ;
+        transform: rotate(-20deg);
+    } 
+    #lclaw1::after{
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: 40%;
+        height: 20%;
+        width: 20%;
+        transform: rotate(0deg);
+        background-color: gray;
+    }
+    #lclaw2{
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+    #lclaw2::before,
+    #lclaw2::after{
+        content: '';
+        position: absolute;
+        top: -140%;
+        left: 65%;
+        height: 20%;
+        width: 20%;
+        background-color: gray;
+        border-radius: 50% 50% 48% 52% / 63% 63% 37% 37% ;
+        transform: rotate(20deg);
+    } 
+
+
+    
 
 </style>
 <html>
@@ -298,16 +591,37 @@
                     <div class="tongue1"></div>
                     <div class="tongue2"></div>
                     <div class="tongue3"></div>
-                    <div class="tongue4"></div>
-                    <div class="tongue5"></div>
                 </div>
-                <!-- <div class="triangle"></div> -->
             </div>
+            <div class="panda-shoulders"></div>
             <div class="panda-bottom">
                 <div class="right-hand">
                     <div class="rfinger1"></div>
                     <div class="rfinger2"></div>
-                    <div class="rfinger3"></div>
+                </div>
+                <div class="left-hand">
+                    <div class="curve"></div>
+                    <div class="lfinger1"></div>
+                    <div class="lfinger2"></div>
+                </div>
+                <div class="right-foot">
+                    <div class="rpalm">
+                        <div id="rpalm-detail">
+                            <div class="point1"></div>
+                        </div>
+                        <div class="rpalm-detail2"></div>
+                    </div>
+                    <div id="rclaw1"></div>
+                    <div id="rclaw2"></div>
+                </div>
+                <div class="left-foot">
+                    <div class="lpalm">
+                        <div id="lpalm-detail">
+                            <div class="point2"></div>
+                        </div>
+                    </div>
+                    <div id="lclaw1"></div>
+                    <div id="lclaw2"></div>
                 </div>
             </div>
         </div>
